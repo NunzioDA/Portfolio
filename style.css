@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    font-family: 'Urbanist', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 300;
+	font-size:28px;
+    color: #333;
+}
+
+h1, 
+h2, 
+h3{
+    font-family: 'Urbanist', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 900;
+	font-size:60px;
+}
+
+
+.section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #f4f4f4;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.section.active {
+    opacity: 1;
+}
+
+.section#intro {
+    background-color: #e0f7fa;
+}
+
+#intro .intro-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#intro .intro-image {
+    flex: 1;
+    text-align: center;
+}
+
+#intro .intro-image img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 50%; /* Make the image circular, if desired */
+}
+
+#intro .intro-text {
+    flex: 1;
+    text-align: left;
+}
+
+#intro .intro-link-icons {
+    margin-top: 20px;
+}
+
+#intro .intro-link-icons a {
+    margin-right: 15px;
+    font-size: 24px; /* Icon size */
+    color: #333; /* Icon color */
+}
+
+/* Add specific styles for the icons, if needed */
+.icon-link1:before {
+  content: "\F392"; /* Unicode code for the desired icon */
+  font-family: "Font Awesome 5 Brands"; /* or the font family you are using */
+}
+
+/*Example icons using the Font Awesome library, you should include the library in your project*/
+
+.section#projects {
+    background-color: #e8f5e9;
+}
+
+.section#contacts {
+    background-color: #fff3e0;
+}
+
+.content {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.project {
+    margin-bottom: 30px;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+}
