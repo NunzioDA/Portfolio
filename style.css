@@ -2,9 +2,10 @@ body {
     margin: 0;
     font-family: 'Urbanist', sans-serif;
 	font-optical-sizing: auto;
-	font-weight: 300;
-	font-size:28px;
-    color: #333;
+	font-weight: 400;
+	font-size:22px;
+	color:#5b5b5b;
+	line-height: 1.5;
 }
 
 h1, 
@@ -14,6 +15,8 @@ h3{
 	font-optical-sizing: auto;
 	font-weight: 900;
 	font-size:60px;
+	color:#332011;
+	line-height: 1.2;
 }
 
 
@@ -33,7 +36,7 @@ h3{
 }
 
 .section#intro {
-    background-color: #e0f7fa;
+    background-color: #fef9f5;
 }
 
 #intro .intro-content {
