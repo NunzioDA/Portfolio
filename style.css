@@ -44,17 +44,18 @@ h3{
     align-items: center;
     justify-content: center;
     width: 80%;
-    max-width: 1200px;
     margin: 0 auto;
+	/* background-color: #333; */
 }
 
 #intro .intro-image {
     flex: 1;
     text-align: center;
+	margin: 0;
+	margin-left: 60px;
 }
 
 #intro .intro-image img {
-    max-width: 80%;
     height: auto;
     border-radius: 50%; /* Make the image circular, if desired */
 }
@@ -62,6 +63,7 @@ h3{
 #intro .intro-text {
     flex: 1;
     text-align: left;
+	max-width: 600px;
 }
 
 #intro .intro-link-icons {
