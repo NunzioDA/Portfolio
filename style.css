@@ -19,6 +19,20 @@ h3{
 	line-height: 1.2;
 }
 
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
 
 .section {
     height: 100vh;
@@ -66,23 +80,32 @@ h3{
 	max-width: 600px;
 }
 
+
+/* ========== SOCIAL ICONS ========== */
+
 #intro .intro-link-icons {
-    margin-top: 20px;
+    margin-top: 40px;
+    display: flex;
+    gap: 25px;
 }
 
-#intro .intro-link-icons a {
-    margin-right: 15px;
-    font-size: 24px; /* Icon size */
-    color: #333; /* Icon color */
+.social-icon {
+    height: 25px;
+    width: 25px;
+    display: block;
+    background-size: cover !important;
 }
 
-/* Add specific styles for the icons, if needed */
-.icon-link1:before {
-  content: "\F392"; /* Unicode code for the desired icon */
-  font-family: "Font Awesome 5 Brands"; /* or the font family you are using */
+.social-icon#linkedin {
+    background: url('./icons/linkedin.png');
 }
 
-/*Example icons using the Font Awesome library, you should include the library in your project*/
+.social-icon#github {
+    background: url('./icons/github.png');
+}
+
+
+/* ========== SECTIONS ========== */
 
 .section#projects {
     background-color: #e8f5e9;
