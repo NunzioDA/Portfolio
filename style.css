@@ -1,3 +1,4 @@
+/* ====== GENERAL TEXT STYLE ====== */
 body {
     margin: 0;
     font-family: 'Urbanist', sans-serif;
@@ -19,21 +20,34 @@ h3{
 	line-height: 1.2;
 }
 
+.content {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* ====== TOP BAR ====== */
 .topbar {
     position: fixed;
+    display: flex;
     top: 0;
     left: 0;
     right: 0;
     height: 60px;
     background-color: #fff;
-    display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     z-index: 1000;
 }
 
+.topbar-links{
+    display: flex;
+    gap: 20px;
+    padding-right: 20px;
+}
+
+/* ====== SECTIONS ====== */
 .section {
     height: 100vh;
     display: flex;
@@ -49,6 +63,8 @@ h3{
     opacity: 1;
 }
 
+/* ====== INTRO ====== */
+
 .section#intro {
     background-color: #fef9f5;
 }
@@ -57,7 +73,7 @@ h3{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
 	/* background-color: #333; */
 }
@@ -81,13 +97,33 @@ h3{
 }
 
 
-/* ========== SOCIAL ICONS ========== */
-
 #intro .intro-link-icons {
     margin-top: 40px;
     display: flex;
     gap: 25px;
 }
+
+/* ========== PROJECTS ========== */
+.section#projects {
+    background-color: #e8f5e9;
+}
+
+.project {
+    margin-bottom: 30px;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ========== CONTACTS ========== */
+.section#contacts {
+    background-color: #fff3e0;
+}
+
+
+/* ========== SOCIAL ICONS ========== */
 
 .social-icon {
     height: 25px;
@@ -105,27 +141,4 @@ h3{
 }
 
 
-/* ========== SECTIONS ========== */
 
-.section#projects {
-    background-color: #e8f5e9;
-}
-
-.section#contacts {
-    background-color: #fff3e0;
-}
-
-.content {
-    width: 80%;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.project {
-    margin-bottom: 30px;
-}
-
-.project img {
-    max-width: 100%;
-    height: auto;
-}
