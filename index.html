@@ -8,32 +8,36 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <div class="topbar">
         <div>
-            My Portfolio
+            Nunzio D'Amore
         </div>
-        <div class="topbar-links">
-            <a href="#intro" class="topbar-button">Home</a>
-            <a href="#projects" class="topbar-button">Projects</a>
-            <a href="#contacts" class="topbar-button">Contacts</a>
+        <div>
+            <div class="topbar-links">
+                <a href="#intro" class="topbar-button">Home</a>
+                <a href="#projects" class="topbar-button">Projects</a>
+                <a href="#contacts" class="topbar-button">Contacts</a>            
+            </div>
+            <div class="topbar-indicator"></div>
         </div>
-
     </div>
 
     <!-- INTRO -->
 	<div class="section" id="intro">
 		<div class="intro-content">
 			<div class="intro-text">
-				<h1>Hello, my name is</br>Nunzio D'Amore</h1>
-				<p>I’m a software developer, specializing in AI. I’m passionate about tecnology and innovation and I’m looking for challenging and stimulating opportunities.</p>
+				<h1 data-aos="fade-up" data-aos-duration="800">Hello, my name is</br>Nunzio D'Amore</h1>
+				<p data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">I’m a software developer, specializing in AI. I’m passionate about tecnology and innovation and I’m looking for challenging and stimulating opportunities.</p>
 				<div class="intro-link-icons">
-					<a href="https://www.linkedin.com/in/nunzio-damore" target="_blank" class="social-icon" id="linkedin"></a>
-					<a href="https://github.com/NunzioDA" target="_blank" class="social-icon" id="github"></a>
+					<a href="https://www.linkedin.com/in/nunzio-damore" target="_blank" class="social-icon" id="linkedin" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400"></a>
+					<a href="https://github.com/NunzioDA" target="_blank" class="social-icon" id="github" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500"></a>
 				</div>
 			</div>
-			<div class="intro-image">
+			<div class="intro-image" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
 				<img src="images/myimage.jpeg" alt="Your image">
 			</div>
 		</div>
@@ -41,12 +45,17 @@
 
     <!-- PROJECT -->
     <div class="section" id="projects">
-        <div class="content">
-            <h2>My Projects</h2>
-            <div class="project">
-                <img src="images/project1.jpeg" alt="Project 1">
-                <h3>Project 1</h3>
-                <p>Description of project 1.</p>
+        <div>
+            <div class="projects-content">            
+                <h2>My Projects</h2>
+                <div class="project">
+                    <h3>Barber Appointment Management System</h3>
+                    <p>I implemented a Flutter application for a local barber shop, serving as their primary appointment scheduling tool and management system.</p>
+                    <div class="project-images-list">
+                        <img src="images/project1.png" alt="Project 1" data-aos="fade-up" data-aos-duration="800">
+
+                    </div>
+                </div>
             </div>
         </div>
     </div>
