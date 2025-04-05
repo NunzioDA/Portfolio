@@ -1,15 +1,20 @@
 :root {
     --primary-color: #007bff;
+    --primary-color-light: color-mix(in srgb, var(--primary-color) 70%, white);
 }
 
-/* ====== GENERAL TEXT STYLE ====== */
+/* ====== GENERAL STYLE ====== */
+/* html {
+    scroll-behavior: smooth;
+} */
+
+
 body {
     margin: 0;
     font-family: 'Urbanist', sans-serif;
 	font-optical-sizing: auto;
 	font-weight: 400;
 	font-size:22px;
-	color:#5b5b5b;
 	line-height: 1.5;
 }
 
@@ -20,7 +25,7 @@ h3{
 	font-optical-sizing: auto;
 	font-weight: 900;
 	font-size:60px;
-	color:#332011;
+	color:#242424;
 	line-height: 1.2;
 }
 
@@ -38,6 +43,8 @@ h3{
     left: 0;
     right: 0;
     height: 60px;
+    padding-left: 160px;
+    padding-right: 160px;
     background-color: #fff;
     align-items: center;
     justify-content: space-between;
@@ -48,7 +55,6 @@ h3{
 .topbar-links{
     display: flex;
     gap: 20px;
-    padding-right: 20px;
 }
 
 .topbar-button {
@@ -59,18 +65,26 @@ h3{
 }
 
 .topbar-button.active{
-    border-bottom: 2px solid var(--primary-color);
+    border-bottom: 2px solid var(--primary-color-light);
+}
+
+.topbar-indicator{
+    height: 5px;
+    width: 0px;
+    border-radius: 10%;
+    background-color: var(--primary-color-light);
+    margin-left: 0px;
 }
 
 /* ====== SECTIONS ====== */
 .section {
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     background-color: #f4f4f4;
-    opacity: 0;
+    opacity: 1;
     transition: opacity 1s ease-in-out;
 }
 
@@ -81,7 +95,8 @@ h3{
 /* ====== INTRO ====== */
 
 .section#intro {
-    background-color: #fef9f5;
+    background-color: white;
+    height: 100vh;
 }
 
 #intro .intro-content {
@@ -102,7 +117,7 @@ h3{
 
 #intro .intro-image img {
     height: auto;
-    border-radius: 50%; /* Make the image circular, if desired */
+    border-radius: 50%;
 }
 
 #intro .intro-text {
@@ -121,14 +136,26 @@ h3{
 /* ========== PROJECTS ========== */
 .section#projects {
     background-color: #e8f5e9;
+    text-align: left;
 }
 
 .project {
     margin-bottom: 30px;
 }
 
+.projects-content{
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-images-list{
+    display: flex;
+    gap: 20px;
+}
+
 .project img {
-    max-width: 100%;
+    max-width: 20%;
     height: auto;
 }
 
