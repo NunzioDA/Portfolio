@@ -16,6 +16,7 @@ body {
 	font-weight: 400;
 	font-size:22px;
 	line-height: 1.5;
+    color: #5b5b5b
 }
 
 h1, 
@@ -23,10 +24,17 @@ h2,
 h3{
     font-family: 'Urbanist', sans-serif;
 	font-optical-sizing: auto;
-	font-weight: 900;
-	font-size:60px;
+	font-weight: 500;
 	color:#242424;
 	line-height: 1.2;
+}
+
+h1,h2{    
+	font-size:60px;
+}
+
+h3{
+    font-size:30px;
 }
 
 .content {
@@ -132,6 +140,38 @@ h3{
     margin-top: 40px;
     display: flex;
     gap: 25px;
+}
+
+/* ========== Expertise ========== */
+#my_expertise .content
+{
+    display: flex;
+}
+
+.expertise{
+    display: flex;
+    width: 40%;
+    background-color: #fff;
+    border-radius: 5%;
+    padding: 50px;
+    align-items: start;
+}
+
+.expertise-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.expertise-text h3{
+    font-size:25px;
+}
+
+.expertise-icon{
+    height: 30px;
+    width: 30px;
+    display: block;
+    background-size: cover !important;
 }
 
 /* ========== PROJECTS ========== */
