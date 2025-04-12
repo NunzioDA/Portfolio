@@ -89,7 +89,7 @@ h3{
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: #f4f4f4;
+    /* background-color: #f4f4f4; */
     opacity: 1;
     transition: opacity 1s ease-in-out;
 }
@@ -103,16 +103,13 @@ h3{
     margin: 30px 0px 30px 0px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 50px;
 }
 
 .content h2
 {
     margin: 0;
 }
-
-
-
 
 /* ====== INTRO ====== */
 
@@ -157,12 +154,19 @@ h3{
 
 /* ========== Expertise ========== */
 
+.expertise-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;   
+}
 
 .expertise{
     display: flex;
-    background-color: #fff;
-    border-radius: 5%;
+    /* background-color: #fff; */
+    /* border-radius: 5%; */
     width: 30%;
+    height: 90px;
     padding: 50px;
     align-items: start;
     gap: 20px;
@@ -191,16 +195,15 @@ h3{
 /* ========== PROJECTS ========== */
 .section#projects {
     background-color: #e8f5e9;
-    text-align: left;
 }
+
 
 .project {
     margin-bottom: 30px;
     display: flex;
     gap:20px;
+    text-align: left;
 }
-
-
 
 .project-images-list{
     display: flex;
